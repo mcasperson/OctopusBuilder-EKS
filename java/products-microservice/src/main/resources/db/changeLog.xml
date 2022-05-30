@@ -19,7 +19,7 @@
     </changeSet>
     <changeSet author="mcasperson" id="2">
         <insert tableName="product">
-            <column name="name" value="The 10 Pillars of Pragmatic Kubernetes Deployments"/>
+            <column name="name" value="My awesome book"/>
             <column name="dataPartition" value="main"/>
         </insert>
     </changeSet>
