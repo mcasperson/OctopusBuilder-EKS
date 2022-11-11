@@ -263,7 +263,8 @@ runs:
         --apiKey ${{ inputs.octopus_apikey }}
         --space "${{ inputs.octopus_space }}"
         --defaultPackageVersion "0.1.57"
-        --package products:${{ steps.determine_version.outputs.semVer }}
+        --package Backend Service:products:${{ steps.determine_version.outputs.semVer }}
+        --package Postman Integration Test:products-microservice-postman:${{ steps.determine_version.outputs.semVer }}
         --package products-microservice-sbom:${{ steps.determine_version.outputs.semVer }}
         --version ${{ steps.determine_version.outputs.semVer }}
         --ignoreExisting
